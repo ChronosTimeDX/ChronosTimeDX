@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    background: linear-gradient(to right, #000000, #1a1a1a);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 50px rgba(0, 183, 255, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00eeff; /* Color al pasar el mouse */
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px; /* Margen para el header fijo */
+    animation: fadeIn 2s;
+}
+
+.carrusel {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height:350px;
+    margin-top: 20px;
+}
+
+.carrusel-imagenes {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.carrusel-imagenes img {
+    width: 20%;
+    height: auto;
+    padding: 15px;
+    margin: 10px;
+    
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+img {
+    width: 100%; /* O el tamaño deseado */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Cubre el área del contenedor sin distorsión */
+}
+
+.tarjeta {
+    background: #3a3a3a;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+
+
+.tarjeta:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}

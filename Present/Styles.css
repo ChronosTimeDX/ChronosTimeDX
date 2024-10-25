@@ -1,0 +1,119 @@
+
+
+.contenedor {
+    width: 96%;
+    margin: 40px auto;
+    background-color: #530101;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    align-items: center;
+    align-content: center;
+}
+
+header {
+    background: linear-gradient(to right, #000000, #000000);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 100px rgba(0, 93, 130, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    color: #03eeff;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #03eeff;
+    /* Color al pasar el mouse */
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    align-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.cabecera {
+    text-align: center;
+}
+
+.imagen-reloj {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.cuerpo {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.pie {
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: #005b57;
+    color: #fff;
+    padding: 40px 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
